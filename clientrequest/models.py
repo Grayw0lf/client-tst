@@ -47,4 +47,3 @@ class Requisition(models.Model):
 
     def __str__(self):
         return f'Заявка {self.id} - {self.client.fio}'
-

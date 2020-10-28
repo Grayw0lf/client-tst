@@ -3,7 +3,6 @@
 __pycache__
 venv
 /static
-/media
 /.idea
 .DS_Store
 db.sqlite3
