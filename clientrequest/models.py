@@ -36,7 +36,7 @@ class Client(models.Model):
 
 
 class Requisition(models.Model):
-    tetx = models.CharField()
+    text = models.CharField()
     date = models.DateTimeField(auto_now_add=True)
     responsible = models.ForeignKey(Responsible, on_delete=models.SET_NULL)
     client = models.ForeignKey(Client, on_delete=models.SET_NULL)

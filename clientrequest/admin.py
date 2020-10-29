@@ -14,4 +14,4 @@ class ClientAdmin(admin.ModelAdmin):
 
 @admin.register(Requisition)
 class RequisitionAdmin(admin.ModelAdmin):
-    fields = ['date', 'tetx', 'responsible', 'client']
+    fields = ['date', 'text', 'responsible', 'client']

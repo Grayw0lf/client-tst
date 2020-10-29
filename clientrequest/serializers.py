@@ -20,4 +20,4 @@ class RequisitionSerialize(ModelSerializer):
 
     class Meta:
         model = Requisition
-        fields = ['id', 'tetx', 'date', 'responsible', 'client']
+        fields = ['id', 'text', 'date', 'responsible', 'client']
