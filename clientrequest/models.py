@@ -38,8 +38,12 @@ class Client(models.Model):
 class Requisition(models.Model):
     text = models.CharField()
     date = models.DateTimeField(auto_now_add=True)
-    responsible = models.ForeignKey(Responsible, on_delete=models.SET_NULL)
-    client = models.ForeignKey(Client, on_delete=models.SET_NULL)
+    responsible = models.ForeignKey(Responsible,
+                                    on_delete=models.SET_NULL,
+                                    related_name='responsibles')
+    client = models.ForeignKey(Client,
+                               on_delete=models.SET_NULL,
+                               related_name='clients')
 
     class Meta:
         verbose_name = 'Заявка'
